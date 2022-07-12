@@ -158,14 +158,14 @@
         width: 100%;
         padding: 20px;
     }
-    .links-footer a{
-        text-decoration: underline;
-        color: #222;
+    .links-footer a:hover{
+        text-decoration: none;
+        
     }
     .icons{
         height: auto;
         display: flex;
-        width: 40%;
+        width: 45%;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -173,7 +173,7 @@
         padding: 20px 0;
     }
     .logo{
-        width: 60%;
+        width: 70%;
     }
 }
 
