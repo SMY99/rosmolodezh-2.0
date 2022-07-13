@@ -15,8 +15,8 @@
         width: 100%;
     }
 
-    .card {
-        width: 380px;
+    .news-block .card {
+        width: 49%;
     }
 
     .cards-with-text {
@@ -67,8 +67,8 @@
 }
 
 @media (min-width: 500px) and (max-width: 750px) {
-    .card {
-        width: 100%;
+    .news-block .card {
+        width: 49%;
     }
 }
 

@@ -11,9 +11,6 @@
     <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="css/uikit.min.css">
-    <link rel="stylesheet" href="css/uikit-rtl.min.css">
-
 </head>
 
 <body>
@@ -60,378 +57,154 @@
             </div>
         </nav>
     </header>
-    <main>
-
-        <div class="container-xl">
-            <div class="row">
-                <div class="col-md-10 mx-auto">
-                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel"
-                        data-bs-touch="true">
-                        <!-- Carousel indicators -->
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                                aria-label="Slide 4"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
-                                aria-label="Slide 5"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
-                                aria-label="Slide 6"></button>
+    <div class="container text-center my-3">
+        <h2 class="font-weight-light">Bootstrap Multi Slide Carousel</h2>
+        <div class="row mx-auto my-auto justify-content-center">
+            <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-3 col-sm-12">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="//via.placeholder.com/500x400/31f?text=1" class="img-fluid">
+                                </div>
+                                <div class="card-img-overlay">Slide 1</div>
+                            </div>
                         </div>
-                        <!-- Wrapper for carousel items -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <div class="thumb-wrapper">
-                                            <div class="box">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4>1</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur elit. Nam eu sem tempor,
-                                                    varius quam.</p>
-                                                <a href="#" class="btn btn-primary">More <i
-                                                        class="fa fa-angle-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="thumb-wrapper">
-                                            <div class="box">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4>2</h4>
-                                                <p>Vivamus fermentum in arcu in aliquam. Quisque aliqua porta odio in
-                                                    fringilla vivamus.</p>
-                                                <a href="#" class="btn btn-primary">More <i
-                                                        class="fa fa-angle-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="thumb-wrapper">
-                                            <div class="box">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4>3</h4>
-                                                <p>Convallis eget pretium eu, bibendum non leo. Proin susc ipit purus
-                                                    adipiscing dolor.</p>
-                                                <a href="#" class="btn btn-primary">More <i
-                                                        class="fa fa-angle-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="//via.placeholder.com/500x400/e66?text=2" class="img-fluid">
                                 </div>
+                                <div class="card-img-overlay">Slide 2</div>
                             </div>
-
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <div class="thumb-wrapper">
-                                            <div class="box">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4>4</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur elit. Nam eu sem tempor,
-                                                    varius quam.</p>
-                                                <a href="#" class="btn btn-primary">More <i
-                                                        class="fa fa-angle-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="thumb-wrapper">
-                                            <div class="box">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4>5</h4>
-                                                <p>Vivamus fermentum in arcu in aliquam. Quisque aliqua porta odio in
-                                                    fringilla vivamus.</p>
-                                                <a href="#" class="btn btn-primary">More <i
-                                                        class="fa fa-angle-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="thumb-wrapper">
-                                            <div class="box">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4>6</h4>
-                                                <p>Convallis eget pretium eu, bibendum non leo. Proin susc ipit purus
-                                                    adipiscing dolor.</p>
-                                                <a href="#" class="btn btn-primary">More <i
-                                                        class="fa fa-angle-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="//via.placeholder.com/500x400/7d2?text=3" class="img-fluid">
                                 </div>
+                                <div class="card-img-overlay">Slide 3</div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <div class="thumb-wrapper">
-                                            <div class="box">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4>4</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur elit. Nam eu sem tempor,
-                                                    varius quam.</p>
-                                                <a href="#" class="btn btn-primary">More <i
-                                                        class="fa fa-angle-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="thumb-wrapper">
-                                            <div class="box">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4>5</h4>
-                                                <p>Vivamus fermentum in arcu in aliquam. Quisque aliqua porta odio in
-                                                    fringilla vivamus.</p>
-                                                <a href="#" class="btn btn-primary">More <i
-                                                        class="fa fa-angle-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="thumb-wrapper">
-                                            <div class="box">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4>6</h4>
-                                                <p>Convallis eget pretium eu, bibendum non leo. Proin susc ipit purus
-                                                    adipiscing dolor.</p>
-                                                <a href="#" class="btn btn-primary">More <i
-                                                        class="fa fa-angle-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="//via.placeholder.com/500x400?text=4" class="img-fluid">
                                 </div>
+                                <div class="card-img-overlay">Slide 4</div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <div class="thumb-wrapper">
-                                            <div class="box">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4>4</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur elit. Nam eu sem tempor,
-                                                    varius quam.</p>
-                                                <a href="#" class="btn btn-primary">More <i
-                                                        class="fa fa-angle-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="thumb-wrapper">
-                                            <div class="box">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4>5</h4>
-                                                <p>Vivamus fermentum in arcu in aliquam. Quisque aliqua porta odio in
-                                                    fringilla vivamus.</p>
-                                                <a href="#" class="btn btn-primary">More <i
-                                                        class="fa fa-angle-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="thumb-wrapper">
-                                            <div class="box">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4>6</h4>
-                                                <p>Convallis eget pretium eu, bibendum non leo. Proin susc ipit purus
-                                                    adipiscing dolor.</p>
-                                                <a href="#" class="btn btn-primary">More <i
-                                                        class="fa fa-angle-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="//via.placeholder.com/500x400/aba?text=5" class="img-fluid">
                                 </div>
+                                <div class="card-img-overlay">Slide 5</div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <div class="thumb-wrapper">
-                                            <div class="box">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4>4</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur elit. Nam eu sem tempor,
-                                                    varius quam.</p>
-                                                <a href="#" class="btn btn-primary">More <i
-                                                        class="fa fa-angle-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="thumb-wrapper">
-                                            <div class="box">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4>5</h4>
-                                                <p>Vivamus fermentum in arcu in aliquam. Quisque aliqua porta odio in
-                                                    fringilla vivamus.</p>
-                                                <a href="#" class="btn btn-primary">More <i
-                                                        class="fa fa-angle-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="thumb-wrapper">
-                                            <div class="box">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4>6</h4>
-                                                <p>Convallis eget pretium eu, bibendum non leo. Proin susc ipit purus
-                                                    adipiscing dolor.</p>
-                                                <a href="#" class="btn btn-primary">More <i
-                                                        class="fa fa-angle-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="//via.placeholder.com/500x400/fc0?text=6" class="img-fluid">
                                 </div>
+                                <div class="card-img-overlay">Slide 6</div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <div class="thumb-wrapper">
-                                            <div class="box">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4>4</h4>
-                                                <p>Lorem ipsum dolor sit amet, consectetur elit. Nam eu sem tempor,
-                                                    varius quam.</p>
-                                                <a href="#" class="btn btn-primary">More <i
-                                                        class="fa fa-angle-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="thumb-wrapper">
-                                            <div class="box">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4>5</h4>
-                                                <p>Vivamus fermentum in arcu in aliquam. Quisque aliqua porta odio in
-                                                    fringilla vivamus.</p>
-                                                <a href="#" class="btn btn-primary">More <i
-                                                        class="fa fa-angle-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="thumb-wrapper">
-                                            <div class="box">
-                                            </div>
-                                            <div class="thumb-content">
-                                                <h4>6</h4>
-                                                <p>Convallis eget pretium eu, bibendum non leo. Proin susc ipit purus
-                                                    adipiscing dolor.</p>
-                                                <a href="#" class="btn btn-primary">More <i
-                                                        class="fa fa-angle-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Carousel controls -->
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Предыдущий</span>
-                            </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Следующий</span>
-                            </button>
                         </div>
                     </div>
                 </div>
+                <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+        <h5 class="mt-2 fw-light">advances one slide at a time</h5>
+    </div>
+    <section class="registr-form d-flex justify-content-center mt-4">
+        <div class="line-top"></div>
+        <h1>Регистрация</h1>
+        <form action="">
+            <div class="row mt-3 d-flex justify-content-between">
+                <input class="input col-md-3" type="text" placeholder="Фамилия">
+                <input class="input col-md-3" type="text" placeholder="Имя">
+                <input class="input col-md-3" type="text" placeholder="Отчество">
             </div>
 
-            <section class="registr-form d-flex justify-content-center mt-4">
-                <div class="line-top"></div>
-                <h1>Регистрация</h1>
-                <form action="">
-                    <div class="row mt-3 d-flex justify-content-between">
-                        <input class="input col-md-3" type="text" placeholder="Фамилия">
-                        <input class="input col-md-3" type="text" placeholder="Имя">
-                        <input class="input col-md-3" type="text" placeholder="Отчество">
+
+            <div class="row justify-content-between input-child">
+                <input class="input" id="" type="text" placeholder="Логин">
+                <input class="input" type="email" placeholder="E-mail">
+            </div>
+
+            <div class="select-options">
+
+                <div class="select">
+                    <select required>
+                        <option value="" hidden>Укажите ваш пол</option>
+                        <option>Мужской</option>
+                        <option>Женский</option>
+                    </select>
+                </div>
+
+                <div class="select">
+                    <select required>
+                        <option value="" hidden>Занятость</option>
+                        <option>Студент</option>
+                        <option>Работаю</option>
+                        <option>Самозанятый</option>
+                    </select>
+                </div>
+
+                <div class="select">
+
+                    <select required class="test">
+                        <option value="1" hidden>Направление</option>
+                        <option value="1">Направлени 1</option>
+                        <option value="2">Направлени 2</option>
+                        <option value="3">Направлени 3</option>
+                        <option value="3">Направлени 4</option>
+                        <option value="3">Направлени 5</option>
+                        <option value="3">Направлени 6</option>
+                        <option value="3">Направлени 7</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="row justify-content-between input-child">
+                <input class="input" type="password" placeholder="Пароль">
+                <input class="input" type="password" placeholder="Повторите пароль">
+            </div>
+
+            <div class="row">
+                <label class="form-check-label" for="flexCheckDefault">
+                    <div class="checkbox">
+                        <input class=" form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                        Согласен на всё
                     </div>
+                    <button class="reg-btn" type="submit">Зарегистрироваться</button>
+                </label>
+            </div>
+        </form>
 
+        <div class="line-down"></div>
+    </section>
 
-                    <div class="row justify-content-between input-child">
-                        <input class="input" id="" type="text" placeholder="Логин">
-                        <input class="input" type="email" placeholder="E-mail">
-                    </div>
-
-                    <div class="select-options">
-
-                        <div class="select">
-                            <select required>
-                                <option value="" hidden>Укажите ваш пол</option>
-                                <option>Мужской</option>
-                                <option>Женский</option>
-                            </select>
-                        </div>
-
-                        <div class="select">
-                            <select required>
-                                <option value="" hidden>Занятость</option>
-                                <option>Студент</option>
-                                <option>Работаю</option>
-                                <option>Самозанятый</option>
-                            </select>
-                        </div>
-
-                        <div class="select">
-
-                            <select required class="test">
-                                <option value="1" hidden>Направление</option>
-                                <option value="1">Направлени 1</option>
-                                <option value="2">Направлени 2</option>
-                                <option value="3">Направлени 3</option>
-                                <option value="3">Направлени 4</option>
-                                <option value="3">Направлени 5</option>
-                                <option value="3">Направлени 6</option>
-                                <option value="3">Направлени 7</option>
-                            </select>
-                        </div>
-
-                    </div>
-
-                    <div class="row justify-content-between input-child">
-                        <input class="input" type="password" placeholder="Пароль">
-                        <input class="input" type="password" placeholder="Повторите пароль">
-                    </div>
-
-                    <div class="row">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            <div class="checkbox">
-                                <input class=" form-check-input" type="checkbox" id="checkboxNoLabel" value=""
-                                    aria-label="...">
-                                Согласен на всё
-                            </div>
-                            <button class="reg-btn" type="submit">Зарегистрироваться</button>
-                        </label>
-                    </div>
-                </form>
-
-                <div class="line-down"></div>
-            </section>
-
-    </main>
 
     <footer>
         <div class="footer-block">
@@ -472,10 +245,9 @@
     <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
         <i class="fas fa-chevron-up"></i>
     </button>
-    <script src="js/uikit-icons.min.js"></script>
-    <script src="js/uikit.min.js"></script>
     <script src="https://kit.fontawesome.com/dd4e721722.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
+    <script src="js/carousel.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
         crossorigin="anonymous"></script>

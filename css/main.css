@@ -54,11 +54,11 @@ body {
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-.carousel {
+main .carousel {
     height: 750px;
 }
 
-.carousel-inner img {
+main .carousel-inner img {
     height: 750px;
     margin: 0 auto;
     object-fit: cover;
@@ -160,18 +160,18 @@ body {
     color: #FFFFFF;
 }
 
-.card {
+.news-block .card {
     width: 300px;
 }
 
-.card-body .btn {
+.news-block .card-body .btn {
     width: 100%;
     border: 1px solid rgb(109, 109, 109);
     border-radius: 4px;
     transition: 250ms;
 }
 
-.card-body .btn:hover {
+.news-block .card-body .btn:hover {
     border: 1px solid rgb(22, 22, 22);
     color: #0891e6;
     text-decoration: underline;
