@@ -1,47 +1,55 @@
 @media (max-width: 1280px) {
-    .card-text-main{
+    .card-text-main {
         width: 90%;
         height: 110px;
     }
 }
 
 @media (min-width: 500px) and (max-width: 1280px) {
-    .card-form{
+    .card-form {
         width: 98%;
         margin: 0 auto;
     }
-    .card-text-main{
+
+    .card-text-main {
         width: 100%;
     }
-    .card{
+
+    .card {
         width: 380px;
     }
-    .cards-with-text{
+
+    .cards-with-text {
         width: 100%;
     }
-    .news-block{
+
+    .news-block {
         width: 100%;
         height: auto;
     }
-    .registr-form input.input{
+
+    .registr-form input.input {
         width: 100%;
     }
-    .news-blocks{
+
+    .news-blocks {
         height: auto;
     }
-    .directions-block{
+
+    .directions-block {
         width: 95%;
     }
-   
+
 }
 
 @media (max-width: 1200px) {
-    .direction{
+    .direction {
         width: 95%;
     }
 }
+
 @media (min-width: 900px) and (max-width: 1280px) {
-    .directions-block p{
+    .directions-block p {
         width: 100%;
         font-size: 28px;
         line-height: 26px;
@@ -50,7 +58,7 @@
 }
 
 @media (min-width: 500px) and (max-width: 900px) {
-    .directions-block p{
+    .directions-block p {
         width: 100%;
         font-size: 20px;
         line-height: 24px;
@@ -59,86 +67,111 @@
 }
 
 @media (min-width: 500px) and (max-width: 750px) {
-    .card{
+    .card {
         width: 100%;
     }
 }
 
 @media (min-width: 500px) and (max-width: 720px) {
-    .registr-form input.input{
+    .registr-form input.input {
         width: 100%;
     }
 }
+
 @media (min-width: 500px) and (max-width: 1200px) {
-    .registr-form .input-child input:nth-child(1), .registr-form .input-child input:nth-child(2) {
-        width: 49%; 
+
+    .registr-form .input-child input:nth-child(1),
+    .registr-form .input-child input:nth-child(2) {
+        width: 49%;
     }
 }
+
 @media (min-width: 500px) and (max-width: 720px) {
-    .registr-form .input-child input:nth-child(1), .registr-form .input-child input:nth-child(2) {
-        width: 100%; 
+
+    .registr-form .input-child input:nth-child(1),
+    .registr-form .input-child input:nth-child(2) {
+        width: 100%;
     }
 }
 
 @media (min-width: 500px) and (max-width: 1200px) {
     .registr-form form{
-        width: 100%;
+        width: 90%;
+    }
+    .auth-form form{
+        width: 95%;
+    }
+    .auth-form{
+        width: 90%;
+        margin: 0 auto;
     }
 }
+
 @media (min-width: 500px) and (max-width: 1200px) {
     .registr-form {
         width: 100%;
         height: auto;
     }
-    .registr-form .line-top, .registr-form .line-down{
+
+    .registr-form .line-top,
+    .registr-form .line-down {
         width: 95%;
     }
 }
 
 @media (min-width: 500px) and (max-width: 800px) {
-    .reg-btn{
+    .reg-btn {
         width: 100%;
         margin-top: 1rem;
-       
+
     }
 }
 
 @media (min-width: 500px) and (max-width: 1000px) {
-    .select-options{
+    .select-options {
         width: 100%;
         flex-direction: column;
     }
-    .select select{
+
+    .select select {
         width: 100%;
         margin: 1rem 0;
     }
+
     .select:after {
         left: 95%;
     }
-    .registr-form form{
+
+    .registr-form form {
         width: 95%;
     }
-    .reg-btn{
+
+    .reg-btn {
         width: 50%;
     }
+
     .form-check-label {
-        margin:  0;
+        margin: 0;
     }
 }
+
 @media (min-width: 500px) and (max-width: 720px) {
-    .form-check-label{
+    .form-check-label {
         margin: 1rem 0;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
-    .checkbox{
+
+    .checkbox {
         margin-bottom: .80rem;
     }
-    .reg-btn{
+
+    .reg-btn {
         width: 100%;
     }
-    footer{
+
+    footer {
         display: flex;
         justify-content: center;
         width: 100%;
@@ -146,39 +179,40 @@
         background-color: #222;
 
     }
-    .footer-block{
+
+    .footer-block {
         width: 95%;
         flex-direction: column;
     }
-    .line-top{
+
+    .line-top {
         display: none;
     }
-    .links-footer{
+
+    .links-footer {
         align-content: center;
         width: 100%;
         padding: 20px;
     }
-    .links-footer a:hover{
+
+    .links-footer a:hover {
         text-decoration: none;
-        
+
     }
-    .icons{
+
+    .icons {
         height: auto;
         display: flex;
         width: 45%;
         flex-direction: row;
         justify-content: space-between;
     }
-    .footer-block{
+
+    .footer-block {
         padding: 20px 0;
     }
-    .logo{
+
+    .logo {
         width: 70%;
     }
 }
-
-
-
-
-
-
