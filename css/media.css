@@ -68,7 +68,7 @@
 
 @media (min-width: 500px) and (max-width: 750px) {
     .news-block .card {
-        width: 49%;
+        width: 100%;
     }
 }
 
@@ -78,11 +78,27 @@
     }
 }
 
-@media (min-width: 500px) and (max-width: 1200px) {
+@media (min-width: 500px) and (max-width: 1280px) {
+    .main-card .col {
+        margin: 10px 0;
+
+    }
+
+    .main-card .col .card-text-main {
+        width: 90%;
+        font-size: 14px;
+    }
 
     .registr-form .input-child input:nth-child(1),
     .registr-form .input-child input:nth-child(2) {
         width: 49%;
+    }
+
+}
+
+@media (min-width: 770px) and (max-width: 1200px) {
+    #center-block .card {
+        margin: 0 20px;
     }
 }
 
@@ -95,13 +111,15 @@
 }
 
 @media (min-width: 500px) and (max-width: 1200px) {
-    .registr-form form{
+    .registr-form form {
         width: 90%;
     }
-    .auth-form form{
+
+    .auth-form form {
         width: 95%;
     }
-    .auth-form{
+
+    .auth-form {
         width: 90%;
         margin: 0 auto;
     }
@@ -153,6 +171,19 @@
     .form-check-label {
         margin: 0;
     }
+
+    #center-block .card-height {
+        height: auto;
+    }
+
+    #center-block .card-height img,
+    #center-block .right .card-height img {
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    #center-block .w-card {
+        width: 95%;
+    }
 }
 
 @media (min-width: 500px) and (max-width: 720px) {
@@ -181,8 +212,8 @@
     }
 
     .footer-block {
-        width: 95%;
-        flex-direction: column;
+        width: 65%;
+
     }
 
     .line-top {
@@ -190,9 +221,9 @@
     }
 
     .links-footer {
-        align-content: center;
         width: 100%;
-        padding: 20px;
+        margin: 20px 0;
+        justify-content: center;
     }
 
     .links-footer a:hover {
@@ -201,11 +232,8 @@
     }
 
     .icons {
-        height: auto;
-        display: flex;
-        width: 45%;
-        flex-direction: row;
-        justify-content: space-between;
+        width: 35%;
+        align-items: flex-end;
     }
 
     .footer-block {
@@ -213,6 +241,6 @@
     }
 
     .logo {
-        width: 70%;
+        display: none;
     }
 }
