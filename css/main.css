@@ -144,6 +144,8 @@ main .carousel-inner img {
     border-radius: 10px;
     text-align: center;
     padding: 20px;
+    margin-top: 1rem;
+    margin-left: .8rem;
 }
 
 .directions-block a {
@@ -198,10 +200,6 @@ main .carousel-inner img {
 .direction:hover {
     border: 1px solid #282828;
 
-}
-
-.cards-with-text {
-    width: 1300px;
 }
 
 .directions-block {
