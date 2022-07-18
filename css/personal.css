@@ -19,7 +19,7 @@ main{
     margin-top: 2rem;
     width: 1400px;
     background-color: #fff;
-    height: 100vh;
+
 }
 
 .avatar img{
@@ -112,4 +112,202 @@ main{
     font-size: 32px;
     color: #202020;
     font-weight: 600;
+}
+.accordion-button{
+    padding: 0;
+}
+
+.table th{
+    border: 0;
+}
+#nonborder th{
+    width: 190px;
+    border-right: 1px solid #DEE2E6;
+    border-bottom: 1px solid #DEE2E6;
+}
+#nonborder td{
+   margin-right: 0px;
+   border-right: 1px solid #DEE2E6;
+}
+
+#nonborder td:nth-last-child(1), #nonborder th:nth-last-child(1){
+    border-right: 0;
+}
+#nonborder th:nth-child(1){
+    width: 30px;
+}
+td:nth-last-child(1){
+    padding-right: 20px;
+}
+
+.grade-block{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.accordion-item{
+    width: 1370px;
+}
+
+.accordion-button th{
+    margin: 0 auto;
+}
+.accordion-button{
+    border: 1px solid #555555;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.accordion-button{
+    padding: 10px 10px 0px 10px;
+    
+}
+
+.accordion-flush .accordion-item .accordion-button {
+    border-radius: 5px;
+}
+
+.accordion-item:last-of-type .accordion-collapse{
+    padding: 0 10px;
+}
+
+.add-block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+    width: 1370px;
+    background-color: #EDEDED;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+.text-h1{
+    font-weight: 400;
+    font-size: 32px;    
+}
+
+.text-h2{
+    font-weight: 400;
+    font-size: 18px
+}
+
+.add-block .btn, .edit-block .btn{
+    width: 272px;
+    height: 60px;
+    background-color: #555;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 250ms;
+}
+
+.add-block button:hover, .edit-block .btn:hover{
+    background-color: #333;
+    text-decoration: underline;
+}
+.edit-block{
+    height: auto;
+    width: 1370px;
+    background-color: #EDEDED;
+    border-radius: 5px;
+}
+.edit-block .accordion-flush .accordion-item .accordion-button{
+    border: 0;
+}
+
+.edit-row{
+    padding: 20px 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.edit-block .text-h2{
+    width: 800px;
+}
+.edit-block .accordion-header{
+    margin-bottom: 1rem;
+}
+
+.edit-block .accordion {
+    --bs-accordion-bg: none;
+}
+
+.edit-block .accordion-button:not(.collapsed) {
+    color: none;
+    background-color: #EDEDED;
+    box-shadow: none;
+}
+.edit-block .accordion-button:focus, .add-block .accordion-button:focus{
+    box-shadow: none;
+}
+
+.edit-block .accordion-button{
+    padding-right: 1.5rem;
+}
+
+.edit-block .info-block{
+    width: 325px;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 115px;
+}
+
+.edit-block .block-start, .edit-block .block-end{
+    width: 350px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.information{
+    display: flex;
+    justify-content: space-between;
+    width: 750px;
+}
+
+.edit-block .accordion-button::after {
+    position: absolute;
+    right: 30px;
+    top: -36px;
+}
+.number-one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 25px;
+    background-color: #085aff;
+    border-radius: 4px;
+    color: #fff;
+}
+.number-two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 25px;
+    background-color: #FF4848;
+    border-radius: 4px;
+    color: #fff;
+}
+.info-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem;
+}
+.info-block p {
+    margin: 5px;
+}
+.info-block .one{
+    display: flex;
+
 }
