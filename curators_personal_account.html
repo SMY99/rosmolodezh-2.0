@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет куратора</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/personal.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="index.html">Здесь будет лого</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about.html">О проекте</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="directions.html">Направления</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="news.html">Новости</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="teams.html">Команда</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contacts.html">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="sign_in.html">Личный кабинет</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="sign_in.html">Выйти</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div class="main-container rounded-top">
+            <div class="avatar-content container-fluid row">
+                <div class="avatar col-md-3 col-lg-3">
+                    <img src="images/1.jpg" alt="">
+
+                    <button class="img-btn">Нажмите для загрузки аватара</button>
+                </div>
+
+                <div class="form-content col-md-9 col-lg-9">
+                    <div class="text-header">Данные куратора</div>
+                    <form action="">
+                        <div class="row d-flex justify-content-between">
+                            <input class="input col-md-3" type="text" placeholder="Фамилия">
+                            <input class="input col-md-3" type="text" placeholder="Имя">
+                            <input class="input col-md-3" type="text" placeholder="Отчество">
+                        </div>
+
+
+                        <div class="row justify-content-between input-child">
+                            <input class="input" id="" type="text" placeholder="Логин">
+                            <input class="input" type="email" placeholder="E-mail">
+                        </div>
+
+                        <div class="select-options">
+
+                            <div class="select">
+                                <select required>
+                                    <option value="" hidden>Укажите ваш пол</option>
+                                    <option>Мужской</option>
+                                    <option>Женский</option>
+                                </select>
+                            </div>
+
+                            <div class="select">
+                                <select required>
+                                    <option value="" hidden>Занятость</option>
+                                    <option>Студент</option>
+                                    <option>Работаю</option>
+                                    <option>Самозанятый</option>
+                                </select>
+                            </div>
+
+                            <div class="select">
+
+                                <select required class="test">
+                                    <option value="1" hidden>Направление</option>
+                                    <option value="1">Направлени 1</option>
+                                    <option value="2">Направлени 2</option>
+                                    <option value="3">Направлени 3</option>
+                                    <option value="3">Направлени 4</option>
+                                    <option value="3">Направлени 5</option>
+                                    <option value="3">Направлени 6</option>
+                                    <option value="3">Направлени 7</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="row justify-content-between">
+                            <input class="input" type="password" placeholder="Старый пароль">
+                            <input class="input" type="password" placeholder="Новый пароль">
+                            <button class="edit-btn" type="submit">Применить изменения</button>
+                        </div>
+
+                </div>
+                </form>
+            </div>
+            <div class="grade-block">
+                
+
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <table class="table">
+                            <thead>
+                                <tr>
+                                  <th scope="col">#</th>
+                                  <th scope="col">ФИО</th>
+                                  <th scope="col">Блок №</th>
+                                  <th scope="col">Результат</th>
+                                  <th scope="col">Кол-во баллов</th>
+                                  <th scope="col">Время</th>
+                                  <th scope="col">Комментарий</th>
+                                </tr>
+                              </thead>
+                              </table>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <table class="table">
+                            
+                            <tbody>
+                              <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>@mdo</td>
+                                <td>@mdo</td>
+                                <td>@mdo</td>
+                               
+                              </tr>
+                              <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td>@fat</td>
+                                <td>@fat</td>
+                                <td>@fat</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">3</th>
+                                <td colspan="2">Larry the Bird</td>
+                                <td>@twitter</td>
+                                <td>@twitter</td>
+                                <td>@twitter</td>
+                                <td>@twitter</td>
+                            
+                              </tr>
+                            </tbody>
+                          </table>
+                      </div>
+                    </div>
+                  </div>
+                    
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://kit.fontawesome.com/dd4e721722.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
