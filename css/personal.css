@@ -120,11 +120,6 @@ main{
 .table th{
     border: 0;
 }
-#nonborder th{
-    width: 190px;
-    border-right: 1px solid #DEE2E6;
-    border-bottom: 1px solid #DEE2E6;
-}
 #nonborder td{
    margin-right: 0px;
    border-right: 1px solid #DEE2E6;
@@ -132,9 +127,6 @@ main{
 
 #nonborder td:nth-last-child(1), #nonborder th:nth-last-child(1){
     border-right: 0;
-}
-#nonborder th:nth-child(1){
-    width: 30px;
 }
 td:nth-last-child(1){
     padding-right: 20px;
@@ -192,7 +184,12 @@ td:nth-last-child(1){
     font-weight: 400;
     font-size: 18px
 }
-
+.information{
+    margin-top: 2rem;
+}
+.edit-block .btn{
+    margin-top: 1rem;
+}
 .add-block .btn, .edit-block .btn{
     width: 272px;
     height: 60px;
@@ -255,6 +252,7 @@ td:nth-last-child(1){
     background-color: #fff;
     border-radius: 5px;
     height: 115px;
+    margin-bottom: 1rem;
 }
 
 .edit-block .block-start, .edit-block .block-end{
@@ -266,14 +264,22 @@ td:nth-last-child(1){
     align-items: center;
     padding-left: 2rem;
 }
-
+.accordion-body .row {
+    --bs-gutter-x: 2rem;
+}
 .information{
     display: flex;
     justify-content: space-between;
     width: 750px;
 }
-
+.accordion-button:not(.collapsed)::after {
+    margin-bottom: 5px;
+}
+.accordion-button::after {
+    margin-bottom: 5px;
+}
 .edit-block .accordion-button::after {
+    
     position: absolute;
     right: 30px;
     top: -36px;
@@ -310,4 +316,150 @@ td:nth-last-child(1){
 .info-block .one{
     display: flex;
 
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    white-space: nowrap;
+}
+.table th{
+    background-color: #3175fc;
+    color: #fff;
+}
+
+.accordion-item:last-of-type .accordion-collapse {
+    margin-top: 1rem;
+    padding: 0;
+}
+
+.accordion-header td{
+    border: 0;
+}
+
+.table th:nth-child(odd){
+    background-color: #4886FF;
+}
+.table tr:nth-child(even){
+    background-color: #f5f5f5;
+}
+.table tr{
+    transition: all .3s;
+}
+.table-2 tr:hover{
+    background-color: #ccc;
+   
+}
+.table>:not(caption)>*>* {
+    border-bottom: none;
+}
+#nonborder td {
+    border-right: none;
+}
+.table{
+    margin-bottom: 10px;
+}
+
+@media (min-width: 720px) and (max-width:1024px) {
+    .main-container, .form-content .select-options {
+        width: 100%;
+    }
+    .avatar {
+        display: flex;
+        flex-direction: column;
+    }
+    .avatar img{
+        width: 100%;
+    }
+    .img-btn{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .add-block, .edit-block {
+        width: 95%;
+    }
+    .edit-block .block-start, .edit-block .block-end {
+        width: 250px;
+    }
+    .information {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .edit-block .text-h2 {
+        width: 100%;
+    }
+    .edit-row {
+        width: 100%;
+        flex-direction: column;
+    }
+    .edit-block .block-start, .edit-block .block-end {
+        width: 100%;
+        height: 50px;
+    }
+    .add-block{
+        padding: 10px 10px 20px 10px;
+    }
+    .edit-row {
+        padding: 10px 10px 0px 10px;
+    }
+    .form-content {
+        padding: 10px;
+    }
+    .btn-edit{
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+
+    }
+    .edit-block .btn, .add-block .btn{
+        margin-top: 0;
+        height: 50px;
+        font-weight: 300;
+    } 
+    .block-start, .block-end{
+        margin-bottom: 1rem;
+        
+    }
+    .text-h1 {
+        font-weight: 600;
+        font-size: 24px;
+    }
+    .text-header {
+        font-size: 26px;
+        text-align: center;
+    }
+    .avatar-content .form-content input.input, .avatar-content .edit-btn {
+        width: 32%;
+    }
+    .form-content .input-child input:nth-child(1), .form-content .input-child input:nth-child(2) {
+        width: 49%;
+    }
+    .accordion{
+        width: 90%;
+    }
+    .accordion-item{
+        width: 100%;
+    }
+    .footer-block {
+        width: 90%;
+    }
+    .info-block .one {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .btn-edit {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .edit-block .accordion-button::after {
+        position: absolute;
+        right: -24px;
+        top: -34px;
+    }
+    .info-block {
+        align-items: flex-start;
+    }
 }
