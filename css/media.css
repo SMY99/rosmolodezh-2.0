@@ -179,7 +179,7 @@
     }
     .edit-block .accordion-button::after {
         position: absolute;
-        right: -7px;
+        right: 20px;
         top: -34px;
     }
     #accordoin-w .accordion-button::after {
@@ -224,6 +224,35 @@
     }
     .avatar img {
         margin-bottom: 1rem;
+    }
+    .card-edit{
+        width: 100%;
+        height: auto;    
+        margin-bottom: 1.5rem;
+    }
+    .top-content {
+        flex-direction: column;
+        width: 100%;
+    }
+    .top-content .img-edit{
+        width: 100%;
+    }
+    .top-content p {
+        width: 100%;
+    }
+    .down-content{
+        width: 100%;
+        flex-direction: column;
+    }
+    .down-content .del-btn, .down-content .edit-btn{
+        width: 100%;
+    }
+    .down-content .one{
+        margin: 1rem 0;
+        width: 100%;
+    }
+    #accordion-w .accordion{
+        width: 100%;
     }
 }
 

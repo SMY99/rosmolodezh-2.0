@@ -300,9 +300,11 @@ td:nth-last-child(1){
     justify-content: center;
     width: 40px;
     height: 25px;
-    background-color: #FF4848;
     border-radius: 4px;
     color: #fff;
+}
+.down-content .number-two {
+    margin-left: 1rem;
 }
 .info-block{
     display: flex;
@@ -313,7 +315,7 @@ td:nth-last-child(1){
 .info-block p {
     margin: 5px;
 }
-.info-block .one{
+.info-block .one, .down-content .one{
     display: flex;
 
 }
@@ -359,6 +361,117 @@ td:nth-last-child(1){
     margin-bottom: 10px;
 }
 
+.accordion-body .btn-edit{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-edit{
+    width: 580px;
+    height: 310px;
+    border-radius: 5px 10px;
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 2.5rem    
+}
+.down-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 550px;
+}
+.del-btn{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #ff5454;
+    border: 0;
+    color: #fff;
+    transition: 250ms;
+}
+.del-btn:hover{
+    background-color: #fe2323;
+    text-decoration: underline;
+}
+.down-content .edit-btn{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #4886FF;
+    color: #fff;
+    transition: 250ms;
+}
+.down-content .edit-btn:hover{
+    background: #004de6;
+    text-decoration: underline;
+}
+
+.top-content .text-h1{
+    font-size: 24px;
+    color: #252525;
+}
+
+.top-content p {
+    width: 300px;
+}
+
+.top-content .img-edit{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.top-content{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+}
+.down-content p{
+    margin-bottom: 0;
+}
+.down-content .number-one {
+    margin-left: 1rem;
+}
+.d-flex-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*
+    Класс для заблокированного задания 
+*/
+.locked-task{  
+    width: 1370px;
+    height: 250px;
+    pointer-events: none;
+    opacity: 0.5;
+    
+}
+
+
+/* 
+    Классы для цвета оценок
+*/
+.rating-two{
+    background-color: #FF4848;
+}
+.rating-three{
+    background-color: #ffc72c;
+}
+.rating-four{
+    background-color: #13E58D;
+}
+.rating-five{
+    background-color: #54EA2F;
+}
+/* 
+    Медиа запросы для адптивной версии страницы 
+*/
 @media (min-width: 720px) and (max-width:1024px) {
     .main-container, .form-content .select-options {
         width: 100%;
@@ -443,7 +556,7 @@ td:nth-last-child(1){
     .footer-block {
         width: 90%;
     }
-    .info-block .one {
+    .info-block .one{
         display: flex;
         justify-content: flex-end;
     }
@@ -456,10 +569,42 @@ td:nth-last-child(1){
     }
     .edit-block .accordion-button::after {
         position: absolute;
-        right: -24px;
+        right: 14px;
         top: -34px;
     }
     .info-block {
         align-items: flex-start;
     }
+    .card-edit{
+        width: 48%;
+        height: auto;
+        margin-bottom: .7rem;
+    }
+    .top-content {
+        flex-direction: column;
+        width: 100%;
+    }
+    .top-content .img-edit{
+        width: 100%;
+    }
+    .top-content p {
+        width: 100%;
+    }
+    .down-content{
+        width: 100%;
+        flex-direction: column;
+    }
+    .down-content .del-btn, .down-content .edit-btn{
+        width: 100%;
+    }
+    .down-content .one{
+        margin: 1rem 0;
+    }
+    .accordion-body {
+        padding: 0;
+    }
+    .grade-block #accordion-w .accordion{
+        width: 100%;
+    }
 }
+
