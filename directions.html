@@ -162,75 +162,82 @@
         </button>
     </div>
 
-    <section class="registr-form d-flex justify-content-center mt-4">
+    <section class="registr-form container mt-3">
         <div class="line-top"></div>
         <h1>Регистрация</h1>
-        <form action="">
-            <div class="row mt-3 d-flex justify-content-between">
-                <input class="input col-md-3" type="text" placeholder="Фамилия">
-                <input class="input col-md-3" type="text" placeholder="Имя">
-                <input class="input col-md-3" type="text" placeholder="Отчество">
+  
+  
+        <div class="form-group mb-3 row">
+  
+          <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-4">
+            <input type="email" class="form-control" id="floatingInput" placeholder="Фамилия">
+            <label for="floatingInput">Фамилия</label>
+          </div>
+          <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-4">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Имя">
+            <label for="floatingPassword">Имя</label>
+          </div>
+          <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-4">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Отчество">
+            <label for="floatingPassword">Отчество</label>
+          </div>
+  
+          <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-6">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Логин</label>
+          </div>
+          <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-6">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="E-mail">
+            <label for="floatingPassword">E-mail</label>
+          </div>
+  
+          <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-4">
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+              <option value="1">Мужской</option>
+              <option value="2">Женский</option>
+            </select>
+            <label for="floatingSelect">Ваш пол:</label>
+          </div>
+          <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-4">
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+              <option value="1">Студент</option>
+              <option value="2">Работаю</option>
+              <option value="3">Учусь в школе</option>
+            </select>
+            <label for="floatingSelect">Занятость:</label>
+          </div>
+          <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-4">
+            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+              <option value="1">Направление 1</option>
+              <option value="2">Направление 2</option>
+              <option value="3">Направление 3</option>
+            </select>
+            <label for="floatingSelect">Направление:</label>
+          </div>
+  
+          <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-6">
+            <input type="password" class="form-control" id="floatingInput" placeholder="Password">
+            <label for="floatingInput">Пароль</label>
+          </div>
+          <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-6">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Повторите пароль</label>
+          </div>
+  
+          <label class="form-check-label col-sm-12 col-md-6 col-lg-12 " for="flexCheckDefault">
+            <div class="checkbox col-sm-12 col-md-6 col-lg-6">
+              <input class="form-check-input " type="checkbox" id="checkboxNoLabel" value=""
+                aria-label="...">
+              Согласен на всё
             </div>
-
-
-            <div class="row justify-content-between input-child">
-                <input class="input" id="" type="text" placeholder="Логин">
-                <input class="input" type="email" placeholder="E-mail">
-            </div>
-
-            <div class="select-options">
-
-                <div class="select">
-                    <select required>
-                        <option value="" hidden>Укажите ваш пол</option>
-                        <option>Мужской</option>
-                        <option>Женский</option>
-                    </select>
-                </div>
-
-                <div class="select">
-                    <select required>
-                        <option value="" hidden>Занятость</option>
-                        <option>Студент</option>
-                        <option>Работаю</option>
-                        <option>Самозанятый</option>
-                    </select>
-                </div>
-
-                <div class="select">
-
-                    <select required class="test">
-                        <option value="1" hidden>Направление</option>
-                        <option value="1">Направлени 1</option>
-                        <option value="2">Направлени 2</option>
-                        <option value="3">Направлени 3</option>
-                        <option value="3">Направлени 4</option>
-                        <option value="3">Направлени 5</option>
-                        <option value="3">Направлени 6</option>
-                        <option value="3">Направлени 7</option>
-                    </select>
-                </div>
-
-            </div>
-
-            <div class="row justify-content-between input-child">
-                <input class="input" type="password" placeholder="Пароль">
-                <input class="input" type="password" placeholder="Повторите пароль">
-            </div>
-
-            <div class="row">
-                <label class="form-check-label" for="flexCheckDefault">
-                    <div class="checkbox">
-                        <input class=" form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
-                        Согласен на всё
-                    </div>
-                    <button class="reg-btn" type="submit">Зарегистрироваться</button>
-                </label>
-            </div>
-        </form>
-
+            <button class="reg-btn col-sm-12 col-md-6 col-lg-6" type="submit">Зарегистрироваться</button>
+          </label>
+  
+        </div>
+  
         <div class="line-down"></div>
-    </section>
+      </section>
+  
 
 
     <footer>

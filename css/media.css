@@ -26,8 +26,9 @@
     .news-blocks p{
         color: #fff;
         text-align: center;
+        line-height: 26px;
         font-size: 18px;
-       
+        width: 95%;       
     }
     .form-check-label {
         align-items: stretch;
@@ -254,6 +255,29 @@
     #accordion-w .accordion{
         width: 100%;
     }
+    .cunter-content{
+        flex-direction: column;   
+        align-items: center; 
+    }
+    .counter-block{
+      
+    }
+    .block-info-right, .block-info-left{
+        width: 95%;
+    }
+    .block-info-right .text-h1, .block-info-left .text-h1{
+        font-size: 18px;
+    }
+    .counter{
+        margin: 2rem 0;
+        width: 350px;
+        height: 350px;
+    }
+    .block-info-right p, .block-info-left p {
+        width: 300px;
+        font-size: 16px;
+    }
+
 }
 
 @media (min-width:720px) and (max-width: 1280px) {
@@ -297,6 +321,13 @@
     }
     .footer-block {
         width: 90%;
+    }
+    .auth-btn{
+        width: 50%;
+    
+    }
+    .reg-btn {
+        width: 49%;
     }
     .nav-item a{
         font-size: 14px;

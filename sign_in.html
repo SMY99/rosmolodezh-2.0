@@ -50,27 +50,29 @@
         </nav>
     
       </header>
-      <section class="auth-form d-flex justify-content-center mt-4">
+       
+      </section>
+      <section class="auth-form container d-flex justify-content-center mt-4">
         <h1>Авторизация</h1>
-        <form action="">
-            <div class="row ">
-                <input class="input" id="" type="text" placeholder="Логин">
-                
+        <div class="form-group mb-3 row"> 
+          <div class="form-floating mb-3 col-sm-12 col-md-12 col-lg-12">
+            <input type="login" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Логин</label>
+          </div>
+          <div class="form-floating mb-3 col-sm-12 col-md-12 col-lg-12">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Пароль</label>
+          </div>
+  
+          <label class="form-check-label " for="flexCheckDefault">
+            <div>
+              <a href="">Забыли пароль?</a><br>
+              <a href="">Еще не зарегистрированны?</a>
             </div>
-            <div class="row col-md-12">
-                <input class="input" type="password" placeholder="Пароль">
-                
-            </div>
+            
+            <button class="auth-btn" type="submit">Войти</button>
+          </label>
 
-            <div class="row">
-                <label class="form-check-label" for="flexCheckDefault">
-                    <div>
-                        <a href="">Забыли пароль?</a>
-                    </div>
-                    <button class="reg-btn" type="submit">Войти</button>
-                </label>
-            </div>
-        </form>
     </section>
 
 </main>
