@@ -299,6 +299,43 @@
     .news-block {
         width: 100%;
     }
+    .reg-btn{
+        width: 49%;
+    }
+    .content{
+        width: 95%;
+    }
+    .descriptions{
+        width: 100%;
+    }
+    .descriptions .line {
+        width: 100%;
+    }
+    .player{
+        width: 100%;
+    }
+    .content-down{
+        width: 100%;
+
+    }
+    .submit-task{
+        width: 72%;
+    }
+    .add-materials{
+        width: 300px;
+    }
+    .block-info-right, .block-info-left{
+        width: 30%;
+    }
+    .counter{
+        margin: 0 1rem;
+    }
+    .block-info-right p, .block-info-left p{
+        font-size: 15px;
+    }
+    .block-info-right .text-h1, .block-info-left .text-h1{
+        font-size: 17px;
+    }
 }   
 
 @media (min-width:720px) and (max-width: 1024px){
