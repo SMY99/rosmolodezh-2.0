@@ -770,7 +770,11 @@ header form .btn {
 .carousel-inner {
     padding: 0;
 }
-
+.btn-container .line{
+    width: 2px;
+    height: 60px;
+    background-color: #D9D9D9;
+}
 .descriptions{
     width: 1400px;
     min-height: 285px;
@@ -778,6 +782,7 @@ header form .btn {
     border: 4px solid #D9D9D9;
     border-radius: 10px;
     padding: 2rem;
+    margin-bottom: 2rem;
 }
 .descriptions .line{
     width: 1330px;
@@ -787,7 +792,7 @@ header form .btn {
     font-weight: 400;
     font-size: 24px;
     line-height: 29px;
-    color: #252525;
+    color: #555555;
 }
 
 .descriptions .text-p{
@@ -798,25 +803,104 @@ header form .btn {
     color: #555555;
     margin-top: 1rem;
 }
-.player{
+/* .player{
     width: 1400px;
     height: 615px;
+} */
+.submit-task .btn-send:hover{
+    background: #3fb2ff;
+    text-decoration: underline;
 }
+.submit-task .btn-send{
+    width: 245px;
+    height: 60px;
+    background: #1A9DF3;
+    border-radius: 10px;
+    color: #fff;
+    border: 0;
+    transition: 250ms;
+    
+}
+.submit-task .btn-container{
+    width: 892px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.form-control{
+    border: 2px solid #D9D9D9;
+}
+.icon-content{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 
+}
+.icon-content i:hover{
+    color: #0891e6;
+}
+.icon-content i {
+    color: #555;
+    font-size: 32px;
+    cursor: pointer;
+    transition: 250ms;
+}
+.submit-task .form-control{
+    margin-bottom: 2rem;
+}
+.submit-task .attach-file:hover{
+    background: #797979;
+    text-decoration: underline;
+}
+.submit-task .attach-file{
+    background: #555555;
+    border-radius: 10px;
+    width: 245px;
+    height: 60px;
+    transition: 250ms;
+    color: #fff;
+    border: 0;
+    margin-left: 2rem;
+}
+.submit-task .text-h1{
+    color: #555555;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
 .submit-task{
+    padding: 2rem;
     width: 965px;
-    height: 545px;
+    min-height: 485px;
     background: #FFFFFF;
     border: 4px solid #D9D9D9;
     border-radius: 10px;
 }
-
+.add-materials a:hover{
+    text-decoration: underline;
+}
+.add-materials a{
+    color: #555;
+    transition: 250ms;
+    text-decoration: none;
+}
 .add-materials {
     width: 395px;
-    min-height: 545px;
+    min-height: 485px;
     background: #FFFFFF;
     border-radius: 10px;
     border: 4px solid #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.add-materials .text-h1 {
+    color: #555555;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 1rem;
 }
 
 .content-down{
@@ -853,4 +937,194 @@ flex-direction: column;
 
 #center-block p{
     text-align: center;
+}
+
+.link-content p{
+    padding: 0;
+    margin: 0;
+    color: #202020;
+}
+
+.link-content .p-header{
+    color: #202020;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+.link-content  .text-p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+}
+.add-materials .line{
+border: 2px solid #D9D9D9;
+}
+.link-content {
+    margin: 0 auto;
+    width: 350px;
+}
+.page-link{
+padding: .5rem 1rem;
+}
+.active>.page-link, .page-link.active{
+    background-color: #F19324;
+    border: 1px solid #F19324;
+}
+
+#center-block .row {
+    --bs-gutter-x: 0;
+}
+.main-container{
+    margin-top: 2rem;
+    background-color: #fff;
+    border-radius: 15px 15px 0 0;
+    width: 1400px;
+    min-height: 550px;
+    display: flex;
+    justify-content: center;
+}
+.rounded-top  .main-container{
+    margin-top: 2rem;
+    background-color: #fff;
+    border-radius: 15px 15px 0 0;
+    width: 1400px;
+    min-height: 550px;
+}
+.container .main-container{
+    margin-top: 2rem;
+    background-color: #fff;
+    border-radius: 15px 15px 0 0;
+    width: 1300px;
+    min-height: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.images-header{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.images-header img{
+    width: 450px;
+    height: 475px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 0;
+}
+
+.btn-back{
+    margin-top: 1rem;
+    width: 450px;
+    font-size: 20px;
+    height: 475px;
+    height: 60px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #F4F4F4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 250ms;
+}
+.btn-back:hover{
+    background-color: #e1e1e1;
+}
+
+.text-container{
+    width: 410px;
+}
+
+.text-container .text-h1{
+    font-weight: 600;
+    font-size: 32px;
+    color: #202020;
+}
+.text-container .text-h1:nth-child(1){
+    margin-top: 1rem;
+}
+.text-container .line{
+    border: 2px solid #F19324;
+    width: 90%;
+    margin-bottom: 1rem;
+}
+.text-container .text-p{
+    margin-top: 1rem;
+    width: 90%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: justify;
+    color: #282828;
+}
+
+.text-container .link-text{
+    margin-top: 1rem;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: justify;
+    text-decoration-line: none;
+    color: #1A9DF3;
+    transition: 250ms;
+}
+.text-container .link-text:hover{
+    color: #0099ff;
+    text-decoration-line: underline;
+}
+
+.right-block-info{
+    padding: 2rem;
+    margin: 1rem 0;
+    width: 350px;
+    background: #F4F4F4;
+    border-radius: 10px;
+}
+
+.right-block-info .text-h1{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #191919;
+}
+
+.right-block-info .line{
+    border: 2px solid #D9D9D9;
+    margin: 1rem 0;
+}
+
+.link-content .text-h1{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #202020;
+    
+    margin-bottom: .5rem;
+    
+}
+
+.link-content  .text-p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: justify;
+    color: #555;
+    width: 80%;
+    margin-bottom: 1.2rem;
+}
+
+.link-content a{
+    text-decoration: none;
+}
+
+.link-content a:hover{
+    text-decoration: underline;
+    color: #000;
+}
+
+.flex-container{
+    display: flex;
 }
