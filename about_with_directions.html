@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Личный кабинет куратора</title>
+    <title>Главная</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/personal.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
@@ -17,7 +16,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid ">
-                <a class="navbar-brand" href="index.html">Здесь будет лого</a>
+                <a class="navbar-brand" href="index.html">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +34,7 @@
                             <a class="nav-link" aria-current="page" href="directions.html">Направления</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="news.html">Новости</a>
+                            <a class="nav-link active" aria-current="page" href="news.html">Новости</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="teams.html">Команда</a>
@@ -44,665 +43,175 @@
                             <a class="nav-link" aria-current="page" href="contacts.html">Контакты</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="curators_personal_account.html">Личный
-                                кабинет</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="sign_in.html">Выйти</a>
+                            <a class="nav-link" aria-current="page" href="sign_in.html">Авторизация</a>
+
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
     </header>
     <main>
-        <div class="rounded-top main-container ">
-            <div class="avatar-content container-fluid row">
-                <div class="avatar col-xs-12 col-md-12 col-lg-3">
-                    <img src="images/1.jpg" alt="">
-
-                    <button class="img-btn">Нажмите для загрузки аватара</button>
-                </div>
-
-                <div class="form-content col-xs-12 col-md-12 col-lg-9">
-                    <div class="text-header mb-4">Данные студента</div>
-
-                    <div class="form-group mb-3 row">
-
-                        <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-4">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">Фамилия</label>
-                        </div>
-                        <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-4">
-                            <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
-                            <label for="floatingInput">Имя</label>
-                        </div>
-                        <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-4">
-                            <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
-                            <label for="floatingInput">Отчество</label>
-                        </div>
-
-                        <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-4">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">Логин</label>
-                        </div>
-                        <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-4">
-                            <input type="email" class="form-control" id="floatingPassword" placeholder="Password">
-                            <label for="floatingInput">E-mail</label>
-                        </div>
-                        <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-4">
-                            <input type="number" maxlength="10" class="form-control" placeholder="Password">
-                            <label for="floatingInput">Ваш возраст</label>
-                        </div>
-
-                        <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-6" style="display: flex; ">
-                            <span style="width: 40px; display:flex; justify-content: center; align-items: center; background-color:#4886FF;
-                                border-radius: 5px 0 0 5px ; color: white;">@</span>
-                            <input style="border-radius: 0 5px 5px 0;" type="text" id="telegram" class="form-control"
-                                placeholder="Telegram Username" aria-label="Username" aria-describedby="basic-addon1">
-                            <label for="floatingPassword" style="margin-left:40px;">Telegram UserName</label>
-                        </div>
-
-                        <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-6">
-                            <input type="email" class="form-control" id="floatingPassword" placeholder="Password">
-                            <label for="floatingInput">Ссылка на Вкотакте</label>
-                        </div>
-
-                        <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-4">
-                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                <option value="1">Мужской</option>
-                                <option value="2">Женский</option>
-                            </select>
-                            <label for="floatingSelect">Ваш пол:</label>
-                        </div>
-                        <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-4">
-                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                <option value="1">Студент</option>
-                                <option value="2">Работаю</option>
-                                <option value="3">Учусь в школе</option>
-                            </select>
-                            <label for="floatingSelect">Занятость:</label>
-                        </div>
-                        <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-4">
-                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                                <option value="1">Направление 1</option>
-                                <option value="2">Направление 2</option>
-                                <option value="3">Направление 3</option>
-                            </select>
-                            <label for="floatingSelect">Направление:</label>
-                        </div>
-
-                        <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-4">
-                            <input type="password" class="form-control" id="floatingInput" placeholder="Password">
-                            <label for="floatingPassword">Пароль</label>
-                        </div>
-
-                        <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-4">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                            <label for="floatingPassword">Повторите пароль</label>
-                        </div>
-                        <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-4">
-                            <button class="btn-apply">Применить изменения</button>
-                        </div>
-                    </div>
-                </div>
+        <div class="container main-container-directions">
+            <div class="images-header">
+                <img src="images/3.jpg" alt="">
+                <div class="btn-back">Назад</div>
             </div>
-            <div class="grade-block">
-                <div class="edit-block block-for-two mt-4 mb-4">
-                    <div class="edit-row">
-                        <div class="text">
-                            <div class="text-h1">Название блока</div>
-                            <div class="text-h2">Здесь вы научитесь основам программирования с вашим руководителем
-                                данного
-                                направления: Семеновым Анатолием</div>
+            <div class="flex-container">
+                <div class="text-container">
+                    <p class="text-h1">Куратор направления</p>
+                    <div class="line"></div>
+                    <p class="text-h2">Об кураторе:</p>
+                    <ul>
+                        <li>
+                            <p>Иванов Иван Иванович;</p>
+                        </li>
+                        <li>
+                            <p>Программист в Яндекс;</p>
+                        </li>
+                        <li>
+                            <p>Работает в сфере IT уже больше 10 лет.</p>
+                        </li>
+                    </ul>
 
-                            <div class="information">
-                                <div class="block-start">
-                                    Начался:
-                                </div>
-                                <div class="block-end">
-                                    Закончился:
-                                </div>
-                            </div>
-                        </div>
+                    <p class="text-h2">Социальные сети куратора:</p>
+                    <div class="line"></div>
+                    <div class="link-row">
+                        <a href="" class="icon">
+                            <i class="fab fa-vk"></i>
+                        </a>
 
-                        <div class="btn-edit">
-                            <div class="info-block">
-                                <div class="one">
-                                    <p>Часы(ов):</p>
-                                    <p class="number-one">12</p>
-                                </div>
-                                <div class="one">
-                                    <p>Средний балл:</p>
-                                    <p class="number-two rating-two"> 2</p>
-                                </div>
-                                <div class="one">
-                                    <p>Преподаватель: Семенов. А.B.</p>
-                                </div>
-                            </div>
-                            <button class="btn">Подробнее...</button>
-                        </div>
+                        <a href="" class="icon">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                        <a href="" class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                                               
                     </div>
-                    <section id="accordion-w">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="collapseOne"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <div class="d-flex-card">
-                                            <div class="card-edit">
-                                                <div class="top-content">
-                                                    <div class="text-cintent">
-                                                        <p class="text-h1">Заголовок</p>
-                                                        <p>
-                                                            В этом задании вам нужно выполнить
-                                                            верстку по макету В этом задании
-                                                            вам нужно выполнить верстку по макету
-                                                            В этом задании вам нужно выполнить верстку
-                                                            по макету
-                                                        </p>
-                                                    </div>
-                                                    <div>
-                                                        <img class="img-edit" src="images/3.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="down-content">
-                                                    <div class="one">
-                                                        <p>Минут:</p>
-                                                        <p class="number-one">12</p>
-                                                    </div>
-                                                    <div class="one">
-                                                        <p>Оценка:</p>
-                                                        <p class="number-two rating-two"> 2</p>
-                                                    </div>
-                                                    <button class="edit-btn">Подробнее...</button>
-                                                </div>
-                                            </div>
-                                            <div class="card-edit">
-                                                <div class="top-content">
-                                                    <div class="text-cintent">
-                                                        <p class="text-h1">Заголовок</p>
-                                                        <p>
-                                                            В этом задании вам нужно выполнить
-                                                            верстку по макету В этом задании
-                                                            вам нужно выполнить верстку по макету
-                                                            В этом задании вам нужно выполнить верстку
-                                                            по макету
-                                                        </p>
-                                                    </div>
-                                                    <div>
-                                                        <img class="img-edit" src="images/3.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="down-content">
-                                                    <div class="one">
-                                                        <p>Минут:</p>
-                                                        <p class="number-one">12</p>
-                                                    </div>
-                                                    <div class="one">
-                                                        <p>Оценка:</p>
-                                                        <p class="number-two rating-three">3</p>
-                                                    </div>
-                                                    <button class="edit-btn">Подробнее...</button>
-                                                </div>
-                                            </div>
-                                            <div class="card-edit">
-                                                <div class="top-content">
-                                                    <div class="text-cintent">
-                                                        <p class="text-h1">Заголовок</p>
-                                                        <p>
-                                                            В этом задании вам нужно выполнить
-                                                            верстку по макету В этом задании
-                                                            вам нужно выполнить верстку по макету
-                                                            В этом задании вам нужно выполнить верстку
-                                                            по макету
-                                                        </p>
-                                                    </div>
-                                                    <div>
-                                                        <img class="img-edit" src="images/3.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="down-content">
-                                                    <div class="one">
-                                                        <p>Минут:</p>
-                                                        <p class="number-one">12</p>
-                                                    </div>
-                                                    <div class="one">
-                                                        <p>Оценка:</p>
-                                                        <p class="number-two rating-five">5</p>
-                                                    </div>
-                                                    <button class="edit-btn">Подробнее...</button>
-                                                </div>
-                                            </div>
-                                            <div class="card-edit">
-                                                <div class="top-content">
-                                                    <div class="text-cintent">
-                                                        <p class="text-h1">Заголовок</p>
-                                                        <p>
-                                                            В этом задании вам нужно выполнить
-                                                            верстку по макету В этом задании
-                                                            вам нужно выполнить верстку по макету
-                                                            В этом задании вам нужно выполнить верстку
-                                                            по макету
-                                                        </p>
-                                                    </div>
-                                                    <div>
-                                                        <img class="img-edit" src="images/3.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="down-content">
-                                                    <div class="one">
-                                                        <p>Минут:</p>
-                                                        <p class="number-one">12</p>
-                                                    </div>
-                                                    <div class="one">
-                                                        <p>Оценка:</p>
-                                                        <p class="number-two rating-four">4</p>
-                                                    </div>
-                                                    <button class="edit-btn">Подробнее...</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    </section>
-                </div>
 
-
-                <div class="locked-task edit-block mt-4 mb-4">
-                    <div class="edit-row">
-                        <div class="text">
-                            <div class="text-h1">Название блока</div>
-                            <div class="text-h2">Здесь вы научитесь основам программирования с вашим руководителем
-                                данного
-                                направления: Семеновым Анатолием</div>
-
-                            <div class="information">
-                                <div class="block-start">
-                                    Начался:
-                                </div>
-                                <div class="block-end">
-                                    Закончился:
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="btn-edit">
-                            <div class="info-block">
-                                <div class="one">
-                                    <p>Часы(ов):</p>
-                                    <p class="number-one">12</p>
-                                </div>
-                                <div class="one">
-                                    <p>Средний балл:</p>
-                                    <p class="number-two rating-two"> 2</p>
-                                </div>
-                                <div class="one">
-                                    <p>Преподаватель: Семенов. А.B.</p>
-                                </div>
-                            </div>
-                            <button class="btn">Подробнее...</button>
-                        </div>
-                    </div>
-                    <section id="accordion-w">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <div class="d-flex-card">
-                                            <div class="card-edit">
-                                                <div class="top-content">
-                                                    <div class="text-cintent">
-                                                        <p class="text-h1">Заголовок</p>
-                                                        <p>
-                                                            В этом задании вам нужно выполнить
-                                                            верстку по макету В этом задании
-                                                            вам нужно выполнить верстку по макету
-                                                            В этом задании вам нужно выполнить верстку
-                                                            по макету
-                                                        </p>
-                                                    </div>
-                                                    <div>
-                                                        <img class="img-edit" src="images/3.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="down-content">
-                                                    <div class="one">
-                                                        <p>Минут:</p>
-                                                        <p class="number-one">12</p>
-                                                    </div>
-                                                    <div class="one">
-                                                        <p>Оценка:</p>
-                                                        <p class="number-two rating-two"> 2</p>
-                                                    </div>
-                                                    <button class="edit-btn">Подробнее...</button>
-                                                </div>
-                                            </div>
-                                            <div class="card-edit">
-                                                <div class="top-content">
-                                                    <div class="text-cintent">
-                                                        <p class="text-h1">Заголовок</p>
-                                                        <p>
-                                                            В этом задании вам нужно выполнить
-                                                            верстку по макету В этом задании
-                                                            вам нужно выполнить верстку по макету
-                                                            В этом задании вам нужно выполнить верстку
-                                                            по макету
-                                                        </p>
-                                                    </div>
-                                                    <div>
-                                                        <img class="img-edit" src="images/3.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="down-content">
-                                                    <div class="one">
-                                                        <p>Минут:</p>
-                                                        <p class="number-one">12</p>
-                                                    </div>
-                                                    <div class="one">
-                                                        <p>Оценка:</p>
-                                                        <p class="number-two rating-three">3</p>
-                                                    </div>
-                                                    <button class="edit-btn">Подробнее...</button>
-                                                </div>
-                                            </div>
-                                            <div class="card-edit">
-                                                <div class="top-content">
-                                                    <div class="text-cintent">
-                                                        <p class="text-h1">Заголовок</p>
-                                                        <p>
-                                                            В этом задании вам нужно выполнить
-                                                            верстку по макету В этом задании
-                                                            вам нужно выполнить верстку по макету
-                                                            В этом задании вам нужно выполнить верстку
-                                                            по макету
-                                                        </p>
-                                                    </div>
-                                                    <div>
-                                                        <img class="img-edit" src="images/3.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="down-content">
-                                                    <div class="one">
-                                                        <p>Минут:</p>
-                                                        <p class="number-one">12</p>
-                                                    </div>
-                                                    <div class="one">
-                                                        <p>Оценка:</p>
-                                                        <p class="number-two rating-five">5</p>
-                                                    </div>
-                                                    <button class="edit-btn">Подробнее...</button>
-                                                </div>
-                                            </div>
-                                            <div class="card-edit">
-                                                <div class="top-content">
-                                                    <div class="text-cintent">
-                                                        <p class="text-h1">Заголовок</p>
-                                                        <p>
-                                                            В этом задании вам нужно выполнить
-                                                            верстку по макету В этом задании
-                                                            вам нужно выполнить верстку по макету
-                                                            В этом задании вам нужно выполнить верстку
-                                                            по макету
-                                                        </p>
-                                                    </div>
-                                                    <div>
-                                                        <img class="img-edit" src="images/3.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="down-content">
-                                                    <div class="one">
-                                                        <p>Минут:</p>
-                                                        <p class="number-one">12</p>
-                                                    </div>
-                                                    <div class="one">
-                                                        <p>Оценка:</p>
-                                                        <p class="number-two rating-four">4</p>
-                                                    </div>
-                                                    <button class="edit-btn">Подробнее...</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-
-                <div class="edit-block block-for-five mt-4 mb-4">
-                    <div class="edit-row">
-                        <div class="text">
-                            <div class="text-h1">Название блока</div>
-                            <div class="text-h2">Здесь вы научитесь основам программирования с вашим руководителем
-                                данного
-                                направления: Семеновым Анатолием</div>
-
-                            <div class="information">
-                                <div class="block-start">
-                                    Начался:
-                                </div>
-                                <div class="block-end">
-                                    Закончился:
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="btn-edit">
-                            <div class="info-block">
-                                <div class="one">
-                                    <p>Часы(ов):</p>
-                                    <p class="number-one">12</p>
-                                </div>
-                                <div class="one">
-                                    <p>Средний балл:</p>
-                                    <p class="number-two rating-five"> 5</p>
-                                </div>
-                                <div class="one">
-                                    <p>Преподаватель: Семенов. А.B.</p>
-                                </div>
-                            </div>
-                            <button class="btn">Подробнее...</button>
-                        </div>
-                    </div>
-                    <section id="accordion-w">
-                        <div class="accordion accordion-flush" id="accordionFlushExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <div class="d-flex-card">
-                                            <div class="card-edit">
-                                                <div class="top-content">
-                                                    <div class="text-cintent">
-                                                        <p class="text-h1">Заголовок</p>
-                                                        <p>
-                                                            В этом задании вам нужно выполнить
-                                                            верстку по макету В этом задании
-                                                            вам нужно выполнить верстку по макету
-                                                            В этом задании вам нужно выполнить верстку
-                                                            по макету
-                                                        </p>
-                                                    </div>
-                                                    <div>
-                                                        <img class="img-edit" src="images/3.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="down-content">
-                                                    <div class="one">
-                                                        <p>Минут:</p>
-                                                        <p class="number-one">12</p>
-                                                    </div>
-                                                    <div class="one">
-                                                        <p>Оценка:</p>
-                                                        <p class="number-two rating-two"> 2</p>
-                                                    </div>
-                                                    <button class="edit-btn">Подробнее...</button>
-                                                </div>
-                                            </div>
-                                            <div class="card-edit">
-                                                <div class="top-content">
-                                                    <div class="text-cintent">
-                                                        <p class="text-h1">Заголовок</p>
-                                                        <p>
-                                                            В этом задании вам нужно выполнить
-                                                            верстку по макету В этом задании
-                                                            вам нужно выполнить верстку по макету
-                                                            В этом задании вам нужно выполнить верстку
-                                                            по макету
-                                                        </p>
-                                                    </div>
-                                                    <div>
-                                                        <img class="img-edit" src="images/3.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="down-content">
-                                                    <div class="one">
-                                                        <p>Минут:</p>
-                                                        <p class="number-one">12</p>
-                                                    </div>
-                                                    <div class="one">
-                                                        <p>Оценка:</p>
-                                                        <p class="number-two rating-three">3</p>
-                                                    </div>
-                                                    <button class="edit-btn">Подробнее...</button>
-                                                </div>
-                                            </div>
-                                            <div class="card-edit">
-                                                <div class="top-content">
-                                                    <div class="text-cintent">
-                                                        <p class="text-h1">Заголовок</p>
-                                                        <p>
-                                                            В этом задании вам нужно выполнить
-                                                            верстку по макету В этом задании
-                                                            вам нужно выполнить верстку по макету
-                                                            В этом задании вам нужно выполнить верстку
-                                                            по макету
-                                                        </p>
-                                                    </div>
-                                                    <div>
-                                                        <img class="img-edit" src="images/3.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="down-content">
-                                                    <div class="one">
-                                                        <p>Минут:</p>
-                                                        <p class="number-one">12</p>
-                                                    </div>
-                                                    <div class="one">
-                                                        <p>Оценка:</p>
-                                                        <p class="number-two rating-five">5</p>
-                                                    </div>
-                                                    <button class="edit-btn">Подробнее...</button>
-                                                </div>
-                                            </div>
-                                            <div class="card-edit">
-                                                <div class="top-content">
-                                                    <div class="text-cintent">
-                                                        <p class="text-h1">Заголовок</p>
-                                                        <p>
-                                                            В этом задании вам нужно выполнить
-                                                            верстку по макету В этом задании
-                                                            вам нужно выполнить верстку по макету
-                                                            В этом задании вам нужно выполнить верстку
-                                                            по макету
-                                                        </p>
-                                                    </div>
-                                                    <div>
-                                                        <img class="img-edit" src="images/3.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                                <div class="down-content">
-                                                    <div class="one">
-                                                        <p>Минут:</p>
-                                                        <p class="number-one">12</p>
-                                                    </div>
-                                                    <div class="one">
-                                                        <p>Оценка:</p>
-                                                        <p class="number-two rating-four">4</p>
-                                                    </div>
-                                                    <button class="edit-btn">Подробнее...</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    </section>
                 </div>
             </div>
         </div>
-        </div>
-        </div>
-        </div>
+        <section class="registr-form container mt-3">
+            <div class="line-top"></div>
+            <h1>Регистрация</h1>
 
-    </main>
-    <footer>
-        <div class="footer-block">
-            <div class=" logo">
-                <img src="images/logo.png" alt="">
+
+            <div class="form-group mb-3 row">
+
+                <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-4">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="Фамилия">
+                    <label for="floatingInput">Фамилия</label>
+                </div>
+                <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-4">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Имя">
+                    <label for="floatingPassword">Имя</label>
+                </div>
+                <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-4">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Отчество">
+                    <label for="floatingPassword">Отчество</label>
+                </div>
+
+                <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-6">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Логин</label>
+                </div>
+                <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-6">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="E-mail">
+                    <label for="floatingPassword">E-mail</label>
+                </div>
+
+                <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-4">
+                    <input type="text" class="form-control" id="floatingPassword" placeholder="phone">
+                    <label for="floatingPassword">Номер телефона</label>
+                </div>
+                <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-4">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <option value="1">Студент</option>
+                        <option value="2">Работаю</option>
+                        <option value="3">Учусь в школе</option>
+                    </select>
+                    <label for="floatingSelect">Занятость:</label>
+                </div>
+                <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-4">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                        <option value="1">Направление 1</option>
+                        <option value="2">Направление 2</option>
+                        <option value="3">Направление 3</option>
+                    </select>
+                    <label for="floatingSelect">Направление:</label>
+                </div>
+
+                <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-6">
+                    <input type="password" class="form-control" id="floatingInput" placeholder="Password">
+                    <label for="floatingInput">Пароль</label>
+                </div>
+                <div class="form-floating mb-3 col-sm-12 col-md-6 col-lg-6">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Повторите пароль</label>
+                </div>
+
+                <label class="form-check-label col-sm-12 col-md-6 col-lg-12 " for="flexCheckDefault">
+                    <div class="checkbox col-sm-12 col-md-6 col-lg-6">
+                        <input class="form-check-input " type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                        Согласен на всё
+                    </div>
+                    <button class="col-sm-12 col-md-6 col-lg-6 reg-btn " type="submit">Зарегистрироваться</button>
+                </label>
+
             </div>
 
-            <section>
-                <div class="line-top"></div>
-                <div class="links-footer">
-                    <a href="">Главная</a>
-                    <a href="">О проекте</a>
-                    <a href="">Направления</a>
-                    <a href="">Новости</a>
-
-                    <a href="">Команада</a>
-                    <a href="">Контакты</a>
-                    <a href="">Авторизация</a>
-                    <a href="">Регистрация</a>
-                </div>
-            </section>
-
-            <div class="icons">
-
-                <div class="icon">
-                    <i class="fab fa-vk"></i>
-                </div>
-                <div class="icon">
-                    <i class="fab fa-telegram-plane"></i>
-                </div>
-                <div class="icon">
-                    <i class="fas fa-phone-alt"></i>
+            <div class="line-down"></div>
+        </section>
+        <footer>
+            <div class="footer-block">
+                <div class=" logo">
+                    <img src="images/logo.png" alt="">
                 </div>
 
+                <section>
+                    <div class="line-top"></div>
+                    <div class="links-footer">
+                        <a href="">Главная</a>
+                        <a href="">О проекте</a>
+                        <a href="">Направления</a>
+                        <a href="">Новости</a>
+
+                        <a href="">Команада</a>
+                        <a href="">Контакты</a>
+                        <a href="">Авторизация</a>
+                        <a href="">Регистрация</a>
+                    </div>
+                </section>
+
+                <div class="icons">
+
+                    <div class="icon">
+                        <i class="fab fa-vk"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fab fa-telegram-plane"></i>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+
+                </div>
             </div>
-        </div>
-    </footer>
-    <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-    <script src="https://kit.fontawesome.com/dd4e721722.js" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-        crossorigin="anonymous"></script>
+        </footer>
+        <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+        <script src="https://kit.fontawesome.com/dd4e721722.js" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+            integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+            integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+            crossorigin="anonymous"></script>
 </body>
 
-</html
+</html>
