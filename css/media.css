@@ -206,7 +206,7 @@
         width: 100%;
     }
     .grade-block .accordion{
-        width: 100%;
+        width: 95%;
     }
     #accordoin-w .accordion{
         width: 100%;
@@ -393,6 +393,9 @@
     .main-container-directions .images-header img, .main-container-directions .btn-back{
         width: 100%;
     }
+    .main-containers{
+        width: 100%;
+    }
 }
 
 
@@ -464,6 +467,9 @@
     }
     .main-container .right-block-info{
         width: 47%;
+    }
+    .main-containers{
+        width: 100%;
     }
 }   
 
@@ -676,7 +682,7 @@
         height: auto;
     }
     .grade-block .accordion {
-        width: 95%;
+        width: 100%;
     }
     .main-container{
         width: 95%;
