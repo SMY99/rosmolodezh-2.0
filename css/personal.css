@@ -19,11 +19,15 @@ main{
     justify-content: center;
 
 }
-.main-container{
+.main-containers{
     margin-top: 2rem;
     width: 1400px;
     background-color: #fff;
+    padding: 2rem;
 
+}
+.avatar.col-lg-3{
+    padding: 0;
 }
 
 .avatar img{
@@ -32,11 +36,9 @@ main{
     object-fit: cover;
     margin-bottom: 2rem;
     border-radius: 5px;
+    padding: 0;
 }
 
-.avatar-content{
-    padding: 2rem 2rem;
-}
 
 .form-content{
     background-color: #ededed;
@@ -477,8 +479,17 @@ display: flex;
     height: 100%;
     width: 100%;
     transition: 250ms;
+    
+    padding: 16px;
+}
+.btn-apply:hover{
+    background: #1863fa;
+    text-decoration: underline;
 }
 
+.main-container .row{
+    justify-content: flex-end;
+} 
 
 /*
     Класс для заблокированного задания 
