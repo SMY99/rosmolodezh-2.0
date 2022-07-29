@@ -46,6 +46,16 @@ main{
     border-radius: 5px;
 
 }
+.form-contents{
+    background-color: #ededed;
+    padding: 1rem;
+    border-radius: 5px;
+
+}
+
+.form-contents .row{
+    justify-content: flex-end;
+}
 
 .input-group-text{
     border: 0;
@@ -163,7 +173,7 @@ display: flex;
     display: flex;
     align-items: center;
     flex-direction: column;
-    
+    padding: 0;
 }
 
 .accordion-item{
@@ -496,7 +506,6 @@ display: flex;
 */
 .locked-task{  
     width: 1370px;
-    height: 250px;
     pointer-events: none;
     opacity: 0.5;
 }
@@ -557,7 +566,7 @@ display: flex;
         margin-bottom: 2rem;
     }
     .add-block, .edit-block {
-        width: 95%;
+        width: 100%;
     }
     .edit-block .block-start, .edit-block .block-end {
         width: 250px;

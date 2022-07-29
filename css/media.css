@@ -496,8 +496,11 @@
         display: flex;
         justify-content: space-between;
     }
+    .form-contents{
+        width: 73%;
+    }
     .form-content {
-        width: 70%;
+        width: 100%;
     }
     .form-content input.input{
         width: 32%;
@@ -518,7 +521,7 @@
         width: 95%;
     }
     .edit-block {
-        width: 95%;
+        width: 100%;
     }
     .edit-block .info-block{
         width: 100%;
